@@ -1,0 +1,63 @@
+@charset "UTF-8";
+@import "setting/variables", "setting/mixin", "setting/fonts", "setting/reset", "section/about", "section/site";
+
+body {
+  font-family: "Century Gothic", "Lato", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+.sec1 {
+  background-color: #efefef;
+}
+.sec2 {
+  background-color: #d9d9d9;
+}
+.sec3 {
+  background-color: #747070;
+}
+
+// intro
+#intro {
+  // height: 100vh;
+  h1 {
+    font-size: 4vw;
+    // font-size: 3.125rem;
+    // font-size: 2rem;
+    margin: 0 5vw;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+  }
+  .typing-demo {
+    width: 22ch;
+    animation:
+      typing 2s steps(22),
+      blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    // font-family: monospace;
+    font-size: 5vw;
+    color: #494949;
+    // font-size: 2.5rem;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  h3 {
+    margin: 5px 10vw;
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+    opacity: 0.6;
+    margin-top: 5px;
+  }
+}

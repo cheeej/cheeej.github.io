@@ -1,0 +1,117 @@
+#about {
+  .inner {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+  }
+  .fp-overflow {
+    display: flex;
+    // gap: 50px;
+  }
+
+  .about-info {
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-text {
+    // margin: 0 5vw;
+    h2 {
+      font-size: 4vw;
+      color: #4e4e4e;
+      padding: 25px 0;
+      word-break: keep-all;
+    }
+  }
+  img {
+    margin: 50px 5vw 0;
+    width: 20vw;
+  }
+  .skill-container {
+    // width: 80%;
+    padding: 40px;
+    background: rgb(240, 240, 240, 0.5);
+    backdrop-filter: 5px;
+    display: flex;
+    gap: 50px;
+    margin-top: 60px;
+    .icon {
+      display: flex;
+      gap: 10px;
+    }
+    .skill-up {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      .introduct {
+        padding-bottom: 20px;
+        border-bottom: solid 1px #777777;
+      }
+      .education {
+        padding-bottom: 20px;
+        border-bottom: solid 1px #777777;
+      }
+      .skill {
+        display: flex;
+        gap: 30px;
+        .icon {
+          flex-direction: column;
+        }
+        ul {
+          display: flex;
+          flex-direction: column;
+          li {
+            gap: 10px;
+            margin-bottom: 10px;
+            ul {
+              display: flex;
+              flex-direction: row;
+              li {
+                img {
+                  width: 2.5vw;
+                  min-width: 40px;
+                  margin: 0 10px;
+                }
+                .fa-brands {
+                  font-size: 2.5vw;
+                  margin: 0 7px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .skill-down {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      position: relative;
+      .Career {
+        display: flex;
+        flex-direction: column;
+        // padding-left: 20px;
+        // border-left: solid 1px #000;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: -30px;
+          width: 1px;
+          height: 70vh;
+          background: #838383;
+        }
+        .icon {
+          padding-right: 30px;
+        }
+        ul {
+          margin-bottom: 23px;
+        }
+      }
+    }
+  }
+}

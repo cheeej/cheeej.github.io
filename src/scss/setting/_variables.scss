@@ -1,0 +1,65 @@
+$prim1: #ffca00;
+$prim2: #dcd8ce;
+$prim3: #093e7e;
+
+$gray-e: #eee;
+$gray-9: #999;
+
+$w: #fff;
+$b: #000;
+
+$txtDefault: #111;
+$titDefault: #101010;
+
+// size
+$bothMargin: 4%;
+$headerHight: 70px;
+$spachingList: 20px;
+
+:root {
+  --basic-font: "pretendard";
+  --mainEng-font: "Montserrat";
+  --mainKor-font: "Noto Sans KR";
+  --mainNum-font: "gmarket";
+
+  --mainBg-color: #f3ede8;
+  --subBg100: #cdc0b1;
+  --subBg200: #afa395;
+  --subBg300: #81887c;
+  --subBg400: #afa7a2;
+  --subBg500: #a6afa2;
+
+  --white: #fff;
+  --black: #000;
+  --black100: #2b2b2b;
+  --black200: #434343;
+  --black300: #686868;
+  --black400: #e0e0e0;
+
+  /* 기본 폰트 설정 */
+  font-family: var(--mainEng-font), var(--mainKor-font);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* 폰트를 부드럽게 렌더링하기 위한 속성  */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* 아이폰 가로 모드에서 글씨 확대 금지 */
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (max-width: 800px) {
+  :root {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
+body {
+  color: var(--black100);
+  background-color: $gray-e;
+}
