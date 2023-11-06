@@ -32,20 +32,21 @@
   }
   .skill-container {
     // width: 80%;
-    padding: 40px;
+    padding: 50px 40px 30px;
     background: rgb(240, 240, 240, 0.5);
     backdrop-filter: 5px;
     display: flex;
-    gap: 50px;
+    gap: 58px;
     margin-top: 60px;
     .icon {
       display: flex;
       gap: 10px;
+      padding-bottom: 15px;
     }
     .skill-up {
       display: flex;
       flex-direction: column;
-      gap: 50px;
+      gap: 37px;
       .introduct {
         padding-bottom: 20px;
         border-bottom: solid 1px #777777;
@@ -54,24 +55,32 @@
         padding-bottom: 20px;
         border-bottom: solid 1px #777777;
       }
+
+      ul {
+        li {
+          font-size: 0.9375rem;
+          b {
+            padding-right: 10px;
+          }
+        }
+      }
       .skill {
         display: flex;
-        gap: 30px;
-        .icon {
-          flex-direction: column;
-        }
+        flex-direction: column;
+        gap: 10px;
         ul {
           display: flex;
           flex-direction: column;
           li {
-            gap: 10px;
+            display: flex;
+            gap: 8px;
             margin-bottom: 10px;
             ul {
               display: flex;
               flex-direction: row;
               li {
                 img {
-                  width: 2.5vw;
+                  width: 2.4vw;
                   min-width: 40px;
                   margin: 0 10px;
                 }
@@ -89,7 +98,7 @@
     .skill-down {
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      // gap: 30px;
       position: relative;
       .Career {
         display: flex;
@@ -102,14 +111,22 @@
           top: 0;
           left: -30px;
           width: 1px;
-          height: 70vh;
+          height: 68vh;
           background: #838383;
         }
         .icon {
           padding-right: 30px;
         }
         ul {
-          margin-bottom: 23px;
+          margin-bottom: 20px;
+          li {
+            ul {
+              margin: 10px 15px 20px;
+              li {
+                font-size: 0.9375rem;
+              }
+            }
+          }
         }
       }
     }

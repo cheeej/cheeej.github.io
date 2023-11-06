@@ -1,0 +1,73 @@
+#banner {
+  height: 100vw;
+
+  .banner-container {
+    width: 80%;
+    position: relative;
+    overflow-x: hidden;
+    margin: 0 auto;
+    h2 {
+      font-size: 3vw;
+      color: #e3e3e3;
+      // padding: 25px 0;
+      text-transform: uppercase;
+      word-break: keep-all;
+      margin: 100px;
+    }
+    .slider {
+      width: 500%;
+      position: relative;
+      animation: animate 10s linear infinite;
+    }
+    .slide {
+      width: 20%;
+      position: relative;
+      float: left;
+      height: 50vh;
+      background-size: cover;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 50vh;
+        object-fit: contain;
+      }
+    }
+
+    @keyframes animate {
+      0% {
+        left: 0;
+      }
+      16% {
+        left: 0;
+      }
+      20% {
+        left: -100%;
+      }
+      36% {
+        left: -100%;
+      }
+      40% {
+        left: -200%;
+      }
+      56% {
+        left: -200%;
+      }
+      60% {
+        left: -300%;
+      }
+      76% {
+        left: -300%;
+      }
+      80% {
+        left: -400%;
+      }
+      96% {
+        left: -400%;
+      }
+      100% {
+        left: 0;
+      }
+    }
+  }
+}

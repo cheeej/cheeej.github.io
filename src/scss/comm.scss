@@ -1,5 +1,6 @@
 @charset "UTF-8";
-@import "setting/variables", "setting/mixin", "setting/fonts", "setting/reset", "section/about", "section/site";
+@import "setting/variables", "setting/mixin", "setting/fonts", "setting/reset", "section/about", "section/site",
+  "section/product", "section/sns", "section/banner";
 
 body {
   font-family: "Century Gothic", "Lato", sans-serif;
@@ -7,7 +8,6 @@ body {
 a {
   text-decoration: none;
 }
-
 .sec1 {
   background-color: #efefef;
 }
@@ -15,6 +15,24 @@ a {
   background-color: #d9d9d9;
 }
 .sec3 {
+  background-color: #747070;
+}
+.sec4 {
+  background-color: #535050;
+}
+.sec5 {
+  background-color: #8d8d8d;
+}
+.sec6 {
+  background-color: #e6e6e6;
+}
+.sec7 {
+  background-color: #aaaaaa;
+}
+.sec8 {
+  background-color: #888888;
+}
+.sec9 {
   background-color: #747070;
 }
 
