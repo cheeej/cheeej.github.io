@@ -55,7 +55,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <!-- Latest compiled JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"></script>
     <script src="./src/fullpage.min.js"></script>
     <script defer src="./src/js/comm.js"></script>
@@ -600,24 +600,51 @@
         </div>
       </section>
       <section class="section sec8" id="banner">
-        <div class="banner-container">
-          <h2>banner</h2>
+        <div class="slider">
           <div class="slider">
-            <div class="slide">
-              <img src="./src/image/banner/bnr-5.png" alt="" />
+            <div class="slider__slide slider__slide--active" data-slide="1">
+              <div class="slider__wrap">
+                <div class="slider__back"></div>
+              </div>
+              <div class="slider__inner">
+                <div class="slider__content">
+                  <h1>
+                    Slide <br />
+                    One
+                  </h1>
+                  <a class="go-to-next next"></a>
+                </div>
+              </div>
             </div>
-            <div class="slide">
-              <img src="./src/image/banner/bnr-1.jpg" alt="" />
+            <div class="slider__slide" data-slide="2">
+              <div class="slider__wrap">
+                <div class="slider__back"></div>
+              </div>
+              <div class="slider__inner">
+                <div class="slider__content">
+                  <h1>
+                    Slide <br />
+                    Two
+                  </h1>
+                  <a class="go-to-next next"></a>
+                </div>
+              </div>
             </div>
-            <div class="slide">
-              <img src="./src/image/banner/bnr-2.jpg" alt="" />
+            <div class="slider__slide" data-slide="3">
+              <div class="slider__wrap">
+                <div class="slider__back"></div>
+              </div>
+              <div class="slider__inner">
+                <div class="slider__content">
+                  <h1>
+                    Slide <br />
+                    Three
+                  </h1>
+                  <a class="go-to-next next"></a>
+                </div>
+              </div>
             </div>
-            <div class="slide">
-              <img src="./src/image/banner/bnr-3.jpg" alt="" />
-            </div>
-            <div class="slide">
-              <img src="./src/image/banner/bnr-4.jpg" alt="" />
-            </div>
+            <div class="slider__indicators"></div>
           </div>
         </div>
       </section>

@@ -13,27 +13,33 @@ a {
 }
 .sec2 {
   background-color: #d9d9d9;
+  background-image: linear-gradient(172deg, #efefef 33%, #d9d9d9 88%);
 }
 .sec3 {
   background-color: #747070;
+  background-image: linear-gradient(185deg, #d9d9d9 0%, #747070 68%);
 }
 .sec4 {
   background-color: #535050;
+  background-image: linear-gradient(172deg, #747070 33%, #535050 88%);
 }
 .sec5 {
-  background-color: #8d8d8d;
+  background-color: #535050;
+  background-image: linear-gradient(179deg, #535050 26%, #c2bfbf 84%);
 }
 .sec6 {
   background-color: #e6e6e6;
+  background-image: linear-gradient(167deg, #c2bfbf 26%, #ebebeb 74%);
 }
 .sec7 {
-  background-color: #aaaaaa;
+  background-color: #ebebeb;
 }
 .sec8 {
-  background-color: #888888;
+  background-color: #ebebeb;
 }
 .sec9 {
-  background-color: #747070;
+  background-color: #e6e6e6;
+  background-image: linear-gradient(180deg, #ebebeb 0%, #ececec 74%);
 }
 
 // intro

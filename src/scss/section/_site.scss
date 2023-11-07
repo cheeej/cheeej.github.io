@@ -1,6 +1,16 @@
+.sec-5 {
+  .site-title {
+    width: 20%;
+    margin-right: 20px;
+  }
+  .site-contents {
+    padding: 150px 50px 50px 80px;
+  }
+}
+
 #site {
   height: 100vh;
-  margin: 0 auto 150px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -32,8 +42,10 @@
       line-height: 1.2;
     }
   }
+
   .site-contents {
     display: flex;
+    align-items: flex-start;
     gap: 3%;
     padding: 150px 80px 50px;
 
@@ -75,12 +87,13 @@
             height: auto;
             object-fit: cover;
             transform: translateY(calc(-100% + 600px));
-            transition: 3s ease-in-out;
+            transition: 2s ease-in-out;
           }
         }
       }
     }
   }
+
   .site-text {
     word-break: keep-all;
     padding: 120px 0px 100px;

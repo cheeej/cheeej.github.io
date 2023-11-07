@@ -22,7 +22,7 @@
     h2 {
       font-size: 4vw;
       color: #4e4e4e;
-      padding: 25px 0;
+      // padding: 25px 0;
       word-break: keep-all;
     }
   }
@@ -37,11 +37,19 @@
     backdrop-filter: 5px;
     display: flex;
     gap: 58px;
-    margin-top: 60px;
+    // margin-top: 60px;
+    margin: 60px auto 40px;
+    ul {
+      margin-top: 8px;
+    }
     .icon {
       display: flex;
+      align-items: center;
       gap: 10px;
       padding-bottom: 15px;
+      p {
+        margin: 0;
+      }
     }
     .skill-up {
       display: flex;
@@ -111,7 +119,7 @@
           top: 0;
           left: -30px;
           width: 1px;
-          height: 68vh;
+          height: 70vh;
           background: #838383;
         }
         .icon {
