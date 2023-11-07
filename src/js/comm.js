@@ -31,6 +31,8 @@ new fullpage("#fullpage", {
 //methods
 // fullpage_api.setAllowScrolling(true);
 
+//
+//
 // banner
 var index = 0;
 var slides = document.querySelectorAll(".slides");
@@ -59,3 +61,102 @@ function changeSlide() {
 }
 
 changeSlide();
+
+//
+//
+// contect
+
+$(document).ready(function () {
+  $(".cosial-icon").hide();
+});
+
+$(window).load(function () {
+  $(".cosial-icon").show();
+
+  var githubPos = $("#github").position();
+  var tistoryPos = $("#tistory").position();
+  var instagramPos = $("#instagram").position();
+  var mailPos = $("#mail").position();
+  var imgPos = $(".me").position();
+
+  $(".cosial-icon").css({
+    position: "absolute",
+    zIndex: "1",
+    top: imgPos.top + 100,
+    left: "47%",
+  });
+
+  setTimeout(function () {
+    $("#github").animate(
+      {
+        top: githubPos.top + 10,
+        left: githubPos.left - 10,
+      },
+      500
+    );
+  }, 250);
+
+  setTimeout(function () {
+    $("#github").animate(
+      {
+        top: githubPos.top,
+        left: githubPos.left,
+      },
+      250
+    );
+
+    $("#instagram").animate(
+      {
+        top: instagramPos.top + 10,
+        left: instagramPos.left - 3,
+      },
+      500
+    );
+  }, 500);
+
+  setTimeout(function () {
+    $("#instagram").animate(
+      {
+        top: instagramPos.top,
+        left: instagramPos.left,
+      },
+      250
+    );
+
+    $("#tistory").animate(
+      {
+        top: tistoryPos.top + 10,
+        left: tistoryPos.left + 3,
+      },
+      500
+    );
+  }, 750);
+
+  setTimeout(function () {
+    $("#tistory").animate(
+      {
+        top: tistoryPos.top,
+        left: tistoryPos.left,
+      },
+      250
+    );
+
+    $("#mail").animate(
+      {
+        top: mailPos.top + 10,
+        left: mailPos.left + 10,
+      },
+      500
+    );
+  }, 1000);
+
+  setTimeout(function () {
+    $("#mail").animate(
+      {
+        top: mailPos.top,
+        left: mailPos.left,
+      },
+      250
+    );
+  }, 2000);
+});
