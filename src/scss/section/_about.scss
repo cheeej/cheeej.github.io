@@ -27,16 +27,16 @@
       // padding: 25px 0;
       word-break: keep-all;
       margin-bottom: 30px;
-      padding-left: 30px;
-      &::before {
-        content: "";
-        position: absolute;
-        top: 26px;
-        left: 0;
-        width: 20px;
-        height: 60px;
-        background: #7e7e7e;
-      }
+      // padding-left: 30px;
+      // &::before {
+      //   content: "";
+      //   position: absolute;
+      //   top: 26px;
+      //   left: 0;
+      //   width: 20px;
+      //   height: 60px;
+      //   background: #7e7e7e;
+      // }
     }
   }
   hr {
@@ -154,7 +154,7 @@
             ul {
               margin: 10px 15px 20px;
               li {
-                font-size: 0.9375rem;
+                font-size: 15px;
               }
             }
           }

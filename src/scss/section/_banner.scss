@@ -7,6 +7,7 @@
     // padding: 25px 0;
     word-break: keep-all;
     text-align: center;
+    margin: 0 auto 45px;
   }
 
   @keyframes fade {
@@ -20,7 +21,7 @@
 
   #slider {
     margin: 0 auto;
-    width: 80%;
+    width: 60%;
     overflow: hidden;
 
     .slides {
@@ -42,8 +43,8 @@
         display: inline-block;
         border-radius: 50%;
         background: #d3d3d3;
-        padding: 8px;
-        margin: 10px 5px;
+        padding: 5px;
+        margin: 40px 5px;
 
         &.active {
           background: black;

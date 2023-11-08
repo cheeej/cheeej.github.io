@@ -363,16 +363,6 @@ legend {
   color: #4e4e4e;
   word-break: keep-all;
   margin-bottom: 30px;
-  padding-left: 30px;
-}
-#about .about-text h2::before {
-  content: "";
-  position: absolute;
-  top: 26px;
-  left: 0;
-  width: 20px;
-  height: 60px;
-  background: #7e7e7e;
 }
 #about hr {
   display: block;
@@ -482,15 +472,7 @@ legend {
   margin: 10px 15px 20px;
 }
 #about .skill-container .skill-down .Career ul li ul li {
-  font-size: 0.9375rem;
-}
-
-.sec-5 .site-title {
-  width: 20%;
-  margin-right: 20px;
-}
-.sec-5 .site-contents {
-  padding: 150px 50px 50px 80px;
+  font-size: 15px;
 }
 
 #site {
@@ -639,6 +621,37 @@ legend {
   font-size: 50px;
   padding: 10px;
 }
+#site .site-icon .icon-link a .site-git {
+  display: block;
+  font-size: 40px;
+  padding: 10px;
+  position: static;
+}
+
+#site .site-contents .site-view,
+.sec3 .site-contents .site-view {
+  width: 85%;
+}
+
+.sec4 .fp-overflow {
+  overflow-y: hidden;
+}
+.sec4 .site-contents {
+  padding: 150px 20px 50px 80px;
+}
+.sec4 .site-contents .site-title {
+  width: 19% !important;
+}
+.sec4 .site-contents .site-title h2 {
+  font-size: 3vw;
+  padding-right: -200px;
+}
+.sec4 .site-contents .site-view {
+  width: 70% !important;
+}
+.sec4 .site-contents .site-text {
+  width: 23% !important;
+}
 
 #product {
   overflow: hidden;
@@ -678,6 +691,7 @@ legend {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 #product .g-container h2 {
   font-size: 3vw;
@@ -685,6 +699,14 @@ legend {
   padding: 25px 0;
   text-transform: uppercase;
   margin-bottom: 30px;
+}
+#product .g-container .dar-logo {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  opacity: 0.7;
+  width: 200px;
+  height: auto;
 }
 #product .g-container .gallery-wrap {
   display: flex;
@@ -852,6 +874,7 @@ legend {
   color: #4e4e4e;
   word-break: keep-all;
   text-align: center;
+  margin: 0 auto 45px;
 }
 @keyframes fade {
   from {
@@ -863,7 +886,7 @@ legend {
 }
 #banner #slider {
   margin: 0 auto;
-  width: 80%;
+  width: 60%;
   overflow: hidden;
 }
 #banner #slider .slides {
@@ -883,8 +906,8 @@ legend {
   display: inline-block;
   border-radius: 50%;
   background: #d3d3d3;
-  padding: 8px;
-  margin: 10px 5px;
+  padding: 5px;
+  margin: 40px 5px;
 }
 #banner #slider #dot .dot.active {
   background: black;
@@ -901,16 +924,16 @@ legend {
   margin: 10px 0;
 }
 
-#contect {
+#contact {
   height: 100vh;
 }
-#contect h2 {
+#contact h2 {
   font-size: 4vw;
   color: #4e4e4e;
   word-break: keep-all;
   text-align: center;
 }
-#contect .me {
+#contact .me {
   display: block;
   margin: 2em auto;
   margin-bottom: 3em;
@@ -924,7 +947,7 @@ legend {
   opacity: 0.9;
   filter: grayscale(0.2);
 }
-#contect .social {
+#contact .social {
   text-align: center;
   font-size: 2.5em;
   color: #555;
@@ -932,39 +955,66 @@ legend {
   color: inherit;
   text-decoration: none;
 }
-#contect .cosial-icon {
+#contact .cosial-icon {
   margin: 0.3em;
   cursor: pointer;
   transition: color 300ms ease, margin-top 300ms ease;
   transform: translateZ(0);
 }
-#contect .cosial-icon:hover {
+#contact .cosial-icon:hover {
   margin-top: -1px;
 }
-#contect .cosial-icon#twitter:hover {
+#contact .cosial-icon#twitter:hover {
   color: #77ddf6;
 }
-#contect .cosial-icon#github {
+#contact .cosial-icon#github {
   color: #474747;
 }
-#contect .cosial-icon#github:hover {
+#contact .cosial-icon#github:hover {
   color: black;
 }
-#contect .cosial-icon#instagram:hover {
+#contact .cosial-icon#instagram:hover {
   background: linear-gradient(rgb(113, 63, 251) 0%, rgb(194, 31, 145) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-#contect .cosial-icon#tistory:hover {
+#contact .cosial-icon#tistory:hover {
   color: rgb(202, 0, 0);
 }
-#contect .cosial-icon#mail:hover {
+#contact .cosial-icon#mail:hover {
   color: #0126f7;
 }
 
 .copyright {
   text-align: center;
   margin-top: 100px;
+}
+
+#motion {
+  height: 100vh;
+  text-align: center;
+}
+#motion h2 {
+  position: relative;
+  font-size: 4vw;
+  color: #4e4e4e;
+  word-break: keep-all;
+  margin-bottom: 30px;
+}
+#motion .motion-video {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+#motion hr {
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  width: 50%;
 }
 
 body {

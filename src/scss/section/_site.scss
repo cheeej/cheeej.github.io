@@ -1,13 +1,3 @@
-.sec-5 {
-  .site-title {
-    width: 20%;
-    margin-right: 20px;
-  }
-  .site-contents {
-    padding: 150px 50px 50px 80px;
-  }
-}
-
 #site {
   height: 100vh;
   margin: 0 auto;
@@ -158,7 +148,44 @@
           font-size: 50px;
           padding: 10px;
         }
+
+        .site-git {
+          display: block;
+          font-size: 40px;
+          padding: 10px;
+          position: static;
+        }
       }
+    }
+  }
+}
+#site,
+.sec3 {
+  .site-contents {
+    .site-view {
+      width: 85%;
+    }
+  }
+}
+.sec4 {
+  .fp-overflow {
+    overflow-y: hidden;
+  }
+  .site-contents {
+    padding: 150px 20px 50px 80px;
+    // padding: 150px 50px 50px 80px;
+    .site-title {
+      width: 19% !important;
+      h2 {
+        font-size: 3vw;
+        padding-right: -200px;
+      }
+    }
+    .site-view {
+      width: 70% !important;
+    }
+    .site-text {
+      width: 23% !important;
     }
   }
 }
