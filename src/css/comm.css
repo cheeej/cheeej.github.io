@@ -625,7 +625,7 @@ legend {
   display: block;
   font-size: 40px;
   padding: 10px;
-  position: static;
+  position: static !important;
 }
 
 #site .site-contents .site-view,

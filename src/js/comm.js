@@ -27,6 +27,7 @@ new fullpage("#fullpage", {
   // normalScrollElements: "#element1",
 
   controlArrows: true,
+  fixedElements: "#header, .footer",
 });
 //methods
 // fullpage_api.setAllowScrolling(true);
