@@ -1,6 +1,13 @@
 #graphic {
   height: 100vh;
-  margin: 0 auto;
+  margin: 100px auto 0;
+
+  .sns-inner {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
   .fp-overflow {
     overflow: visible;
     width: 100%;
@@ -28,7 +35,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    justify-content: center;
 
     // sns
     @import url("https://fonts.googleapis.com/css?family=Roboto+Mono");

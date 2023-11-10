@@ -1,10 +1,11 @@
 #about {
   .inner {
+    max-width: 1500px;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 100px;
+    gap: 80px;
   }
   .fp-overflow {
     display: flex;
@@ -16,6 +17,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 70px;
   }
   .about-text {
     // margin: 0 5vw;
@@ -49,17 +51,17 @@
     border-width: 1px;
   }
   img {
-    margin: 50px 5vw 0;
-    width: 20vw;
+    margin: 40px 5vw 0;
+    width: 17vw;
   }
   .skill-container {
-    // width: 80%;
-    padding: 50px 40px 30px;
+    width: 64%;
+    padding: 50px 10px 30px 56px;
     background: rgba(240, 240, 240, 0.767);
     // background: rgba(240, 240, 240, 0.5);
     backdrop-filter: 5px;
     display: flex;
-    gap: 58px;
+    // gap: 58px;
     // margin-top: 60px;
     margin: 60px auto 40px;
     ul {
@@ -69,28 +71,33 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      padding-bottom: 15px;
+      padding-bottom: 10px;
       p {
         margin: 0;
+        font-size: 24px;
       }
     }
     .skill-up {
       display: flex;
       flex-direction: column;
-      gap: 37px;
-      .introduct {
-        padding-bottom: 20px;
-        border-bottom: solid 1px #777777;
-      }
-      .education {
-        padding-bottom: 20px;
-        border-bottom: solid 1px #777777;
-      }
+      gap: 38px;
+      flex-grow: 1;
+      // padding-left: 15px;
+      // .introduct {
+      //   // padding-bottom: 20px;
+      //   // border-bottom: solid 1px #777777;
+      // }
+      // .education {
+      //   // padding-bottom: 20px;
+      //   // border-bottom: solid 1px #777777;
+      // }
 
       ul {
         li {
-          font-size: 0.9375rem;
+          font-size: 14px;
+          letter-spacing: -0.04rem;
           b {
+            font-size: 16px;
             padding-right: 10px;
           }
         }
@@ -129,6 +136,7 @@
     .skill-down {
       display: flex;
       flex-direction: column;
+      width: 47%;
       // gap: 30px;
       position: relative;
       .Career {
@@ -140,10 +148,10 @@
           content: "";
           position: absolute;
           top: 0;
-          left: -30px;
+          left: -45px;
           width: 1px;
-          height: 70vh;
-          background: #838383;
+          height: 65vh;
+          background: #d3d3d3;
         }
         .icon {
           padding-right: 30px;
@@ -154,7 +162,9 @@
             ul {
               margin: 10px 15px 20px;
               li {
-                font-size: 15px;
+                font-size: 14px;
+                letter-spacing: -0.05rem;
+                color: #5b5b5b;
               }
             }
           }

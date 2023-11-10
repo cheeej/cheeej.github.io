@@ -5,12 +5,12 @@ new fullpage("#fullpage", {
   menu: "#menu",
   navigation: true,
   navigationPosition: "right",
-  navigationTooltips: ["firstSlide", "secondSlide"],
-  showActiveTooltip: true,
-  slidesNavigation: true,
   slidesNavPosition: "top",
 
-  css3: true,
+  slidesNavigation: true,
+  responsiveWidth: 1024,
+  autoScrolling: true,
+
   scrollingSpeed: 500,
   autoScrolling: true,
   fitToSection: true,
@@ -28,6 +28,8 @@ new fullpage("#fullpage", {
 
   controlArrows: true,
   fixedElements: "#header, .footer",
+
+  // nav
 });
 //methods
 // fullpage_api.setAllowScrolling(true);

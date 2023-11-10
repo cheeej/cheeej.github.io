@@ -108,6 +108,7 @@ button,
 header,
 main,
 article {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   word-break: break-all;
@@ -342,11 +343,12 @@ legend {
 }
 
 #about .inner {
+  max-width: 1500px;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 100px;
+  gap: 80px;
 }
 #about .fp-overflow {
   display: flex;
@@ -356,6 +358,7 @@ legend {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 70px;
 }
 #about .about-text h2 {
   position: relative;
@@ -374,16 +377,16 @@ legend {
   border-width: 1px;
 }
 #about img {
-  margin: 50px 5vw 0;
-  width: 20vw;
+  margin: 40px 5vw 0;
+  width: 17vw;
 }
 #about .skill-container {
-  padding: 50px 40px 30px;
+  width: 64%;
+  padding: 50px 10px 30px 56px;
   background: rgba(240, 240, 240, 0.767);
   -webkit-backdrop-filter: 5px;
           backdrop-filter: 5px;
   display: flex;
-  gap: 58px;
   margin: 60px auto 40px;
 }
 #about .skill-container ul {
@@ -393,28 +396,24 @@ legend {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 #about .skill-container .icon p {
   margin: 0;
+  font-size: 24px;
 }
 #about .skill-container .skill-up {
   display: flex;
   flex-direction: column;
-  gap: 37px;
-}
-#about .skill-container .skill-up .introduct {
-  padding-bottom: 20px;
-  border-bottom: solid 1px #777777;
-}
-#about .skill-container .skill-up .education {
-  padding-bottom: 20px;
-  border-bottom: solid 1px #777777;
+  gap: 38px;
+  flex-grow: 1;
 }
 #about .skill-container .skill-up ul li {
-  font-size: 0.9375rem;
+  font-size: 14px;
+  letter-spacing: -0.04rem;
 }
 #about .skill-container .skill-up ul li b {
+  font-size: 16px;
   padding-right: 10px;
 }
 #about .skill-container .skill-up .skill {
@@ -447,6 +446,7 @@ legend {
 #about .skill-container .skill-down {
   display: flex;
   flex-direction: column;
+  width: 47%;
   position: relative;
 }
 #about .skill-container .skill-down .Career {
@@ -457,10 +457,10 @@ legend {
   content: "";
   position: absolute;
   top: 0;
-  left: -30px;
+  left: -45px;
   width: 1px;
-  height: 70vh;
-  background: #838383;
+  height: 65vh;
+  background: #d3d3d3;
 }
 #about .skill-container .skill-down .Career .icon {
   padding-right: 30px;
@@ -472,7 +472,9 @@ legend {
   margin: 10px 15px 20px;
 }
 #about .skill-container .skill-down .Career ul li ul li {
-  font-size: 15px;
+  font-size: 14px;
+  letter-spacing: -0.05rem;
+  color: #5b5b5b;
 }
 
 #site {
@@ -562,7 +564,7 @@ legend {
 }
 #site .site-text {
   word-break: keep-all;
-  padding: 120px 0px 100px;
+  padding: 85px 0px 100px;
   width: 30%;
 }
 #site .site-text .site-info {
@@ -735,7 +737,12 @@ legend {
 
 #graphic {
   height: 100vh;
-  margin: 0 auto;
+  margin: 100px auto 0;
+}
+#graphic .sns-inner {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 #graphic .fp-overflow {
   overflow: visible;
@@ -763,7 +770,6 @@ legend {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  justify-content: center;
   @import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
 }
 #graphic .sns-wrap * {
@@ -1017,6 +1023,16 @@ legend {
   width: 50%;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 1440px) {
+  .inner {
+    margin: 0 25px;
+  }
+}
+
 body {
   font-family: "Century Gothic", "Lato", sans-serif;
 }
@@ -1067,6 +1083,36 @@ a {
   background-image: linear-gradient(180deg, #ebebeb 0%, #ececec 74%);
 }
 
+#nav {
+  position: fixed;
+  width: 100%;
+  justify-content: flex-end;
+  z-index: 100;
+  top: 0;
+  opacity: 1;
+  display: flex;
+  cursor: pointer;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+#nav ul {
+  display: flex;
+  padding: 10px 20px;
+}
+#nav ul li {
+  padding: 20px;
+}
+#nav ul li a {
+  display: block;
+  width: 100%;
+}
+
+#intro {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
 #intro h1 {
   font-size: 4vw;
   margin: 0 5vw;

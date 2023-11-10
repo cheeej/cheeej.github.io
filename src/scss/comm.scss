@@ -2,6 +2,16 @@
 @import "setting/variables", "setting/mixin", "setting/fonts", "setting/reset", "section/about", "section/site",
   "section/product", "section/sns", "section/banner", "section/contact", "section/motion";
 
+* {
+  scroll-behavior: smooth;
+}
+.inner {
+  @media (max-width: 1440px) {
+    // max-width: 1440px;
+    margin: 0 25px;
+  }
+}
+
 body {
   font-family: "Century Gothic", "Lato", sans-serif;
 }
@@ -43,8 +53,36 @@ a {
 }
 
 // intro
+#nav {
+  position: fixed;
+  width: 100%;
+  justify-content: flex-end;
+  z-index: 100;
+  top: 0;
+  opacity: 1;
+  display: flex;
+  cursor: pointer;
+  -webkit-transform: translate3d(0, 0, 0);
+  ul {
+    display: flex;
+    padding: 10px 20px;
+    li {
+      padding: 20px;
+      a {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}
+
 #intro {
-  // height: 100vh;
+  // margin-top: 100px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   h1 {
     font-size: 4vw;
     // font-size: 3.125rem;

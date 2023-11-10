@@ -1,3 +1,12 @@
+// .sec3 {
+//   .inmer {
+//     .site-contents {
+//       .site1-txt {
+//         padding: 70px 0px 100px !important;
+//       }
+//     }
+//   }
+// }
 #site {
   height: 100vh;
   margin: 0 auto;
@@ -86,8 +95,9 @@
 
   .site-text {
     word-break: keep-all;
-    padding: 120px 0px 100px;
+    padding: 85px 0px 100px;
     width: 30%;
+
     .site-info {
       line-height: 1.6;
       font-size: 1.0625rem;
