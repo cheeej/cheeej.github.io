@@ -617,9 +617,15 @@ legend {
   width: 100px;
   text-transform: uppercase;
   padding-right: 20px;
+  padding-right: 54px;
   word-break: keep-all;
 }
-#site .site-text .site-p ul li span {
+#site .site-text .site-p ul li .span-text {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+#site .site-text .site-p ul li .span-text span {
   width: 350px;
   word-break: keep-all;
 }

@@ -126,11 +126,17 @@
             width: 100px;
             text-transform: uppercase;
             padding-right: 20px;
+            padding-right: 54px;
             word-break: keep-all;
           }
-          span {
+          .span-text {
             width: 350px;
-            word-break: keep-all;
+            display: flex;
+            flex-direction: column;
+            span {
+              width: 350px;
+              word-break: keep-all;
+            }
           }
         }
       }
