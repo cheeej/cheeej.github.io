@@ -1,5 +1,11 @@
 #about {
   .inner {
+    @media (max-width: 1440px) {
+      height: auto !important;
+      gap: 10px;
+      flex-direction: column;
+    }
+
     max-width: 1500px;
     margin: 0 auto;
     display: flex;
@@ -13,6 +19,9 @@
   }
 
   .about-info {
+    @media (max-width: 1440px) {
+      width: 100%;
+    }
     width: 27%;
     display: flex;
     flex-direction: column;
@@ -55,6 +64,10 @@
     width: 17vw;
   }
   .skill-container {
+    @media (max-width: 1440px) {
+      display: none;
+      width: 100%;
+    }
     width: 64%;
     padding: 50px 10px 30px 56px;
     background: rgba(240, 240, 240, 0.767);

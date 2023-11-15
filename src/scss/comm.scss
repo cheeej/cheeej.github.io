@@ -14,6 +14,19 @@
 
 body {
   font-family: "Century Gothic", "Lato", sans-serif;
+  @media (max-width: 1500px) {
+    .fp-overflow {
+      margin: 0 50px;
+    }
+  }
+  .fp-responsive .fp-is-overflow.fp-section {
+    height: auto !important;
+  }
+  .fp-is-overflow .fp-overflow.fp-auto-height,
+  .fp-is-overflow .fp-overflow.fp-auto-height-responsive,
+  .fp-is-overflow > .fp-overflow {
+    overflow-y: auto;
+  }
 }
 a {
   text-decoration: none;

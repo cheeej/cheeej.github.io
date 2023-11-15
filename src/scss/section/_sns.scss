@@ -3,6 +3,10 @@
   margin: 100px auto 0;
 
   .sns-inner {
+    @media (max-width: 1500px) {
+      flex-direction: column;
+      margin: 0 auto;
+    }
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -17,6 +21,10 @@
     margin: 0 auto;
   }
   .title {
+    @media (max-width: 1500px) {
+      margin: 30px 0;
+      width: 100%;
+    }
     width: 20%;
     margin-left: 120px;
     h2 {
@@ -28,6 +36,9 @@
     }
   }
   .sns-wrap {
+    @media (max-width: 1500px) {
+      width: 100%;
+    }
     position: relative;
     margin: 0 auto;
     width: 75%;
@@ -123,6 +134,13 @@
 
     // custom
     .flip {
+      @media (max-width: 1440px) {
+        width: 260px;
+      }
+      @media (max-width: 1280px) {
+        padding-right: 13px;
+        width: 230px;
+      }
       position: relative;
       display: inline-block;
       margin-right: 40px;
@@ -130,6 +148,15 @@
       width: 280px;
       > .front,
       > .back {
+        @media (max-width: 1440px) {
+          width: 270px;
+          height: 340px;
+        }
+        @media (max-width: 1280px) {
+          width: 250px;
+          height: 320px;
+        }
+
         display: block;
         color: white;
         width: 300px;

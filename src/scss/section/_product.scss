@@ -34,6 +34,9 @@
     }
   }
   .g-container {
+    @media (max-width: 1280px) {
+      width: 1150px;
+    }
     margin: 0 auto;
     width: 1220px;
     height: 60%;
@@ -58,6 +61,9 @@
       height: auto;
     }
     .gallery-wrap {
+      @media (max-width: 1280px) {
+        width: 80%;
+      }
       display: flex;
       flex-direction: row;
       width: 100%;
