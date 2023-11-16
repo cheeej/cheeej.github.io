@@ -27,6 +27,11 @@
     text-decoration: none;
   }
   .site-title {
+    @media (max-width: 1280px) {
+      width: 100%;
+      padding: 80px 0 40px;
+    }
+
     width: 15%;
     text-align: start;
     padding: 80px 0 55px;
@@ -47,12 +52,18 @@
     @media (max-width: 1500px) {
       padding: 150px 80px 50px;
     }
+    @media (max-width: 1280px) {
+      flex-direction: column;
+    }
     display: flex;
     align-items: flex-start;
     gap: 3%;
     padding: 150px 80px 50px;
 
     .site-view {
+      @media (max-width: 1280px) {
+        width: 100%;
+      }
       width: 40%;
       height: 65vh;
       .site-img {
@@ -98,6 +109,9 @@
   }
 
   .site-text {
+    @media (max-width: 1280px) {
+      padding: 50px 0;
+    }
     word-break: keep-all;
     padding: 85px 0px 100px;
     // width: 30%;
@@ -199,6 +213,9 @@
     @media (max-width: 1500px) {
       padding: 150px 80px 50px;
     }
+    @media (max-width: 1280px) {
+      padding: 0 80px;
+    }
     padding: 150px 20px 50px 80px;
     // padding: 150px 50px 50px 80px;
     .site-title {
@@ -208,11 +225,33 @@
         padding-right: -200px;
       }
     }
+  }
+}
+#site {
+  .site-contents {
     .site-view {
+      @media (max-width: 1280px) {
+        height: 40vh;
+      }
       // width: 70% !important;
     }
     .site-text {
+      @media (max-width: 1280px) {
+        // position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        width: 100% !important;
+        height: 196px;
+      }
       width: 23% !important;
+    }
+    .site-icon {
+      @media (max-width: 1280px) {
+        position: absolute;
+        bottom: 200px;
+        right: 44px;
+      }
     }
   }
 }
