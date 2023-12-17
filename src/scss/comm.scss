@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import "setting/variables", "setting/mixin", "setting/fonts", "setting/reset", "section/about", "section/site",
-  "section/product", "section/sns", "section/banner", "section/contact", "section/motion";
+  "section/product", "section/sns", "section/detailed_page", "section/banner", "section/contact", "section/motion";
 
 * {
   scroll-behavior: smooth;
@@ -74,6 +74,8 @@ a {
   top: 0;
   opacity: 1;
   display: flex;
+  background-color: #e6e6e610;
+  backdrop-filter: blur(15px);
   cursor: pointer;
   -webkit-transform: translate3d(0, 0, 0);
   ul {
