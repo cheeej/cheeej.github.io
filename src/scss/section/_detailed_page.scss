@@ -53,7 +53,7 @@
     object-fit: cover;
     object-position: top;
     transform: translateY(0);
-    transition: 3s ease-in-out;
+    transition: 10s ease-in-out;
 
     &:hover {
       @media (max-width: 800px) {
@@ -66,7 +66,7 @@
       height: auto;
       object-fit: cover;
       transform: translateY(calc(-100% + 600px));
-      transition: 3s ease-in-out;
+      transition: 6s ease-in-out;
     }
   }
 }
